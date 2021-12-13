@@ -1,1 +1,120 @@
 /* Write your CSS here */
+* {
+  font-family: 'roboto';
+}
+@media (max-width: 767px) {
+  .bgContainer {
+    padding: 25px;
+  }
+  .topContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .commentContainer {
+    order: 2;
+  }
+  .inpulName {
+    width: 280px;
+    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cbd2d9;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding: 10px;
+  }
+  .inpulComment {
+    width: 280px;
+    height: 150px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cbd2d9;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding: 10px;
+  }
+  .commentImage {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  .bgContainer {
+    padding: 45px;
+  }
+  .topContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .inpulName {
+    width: 350px;
+    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cbd2d9;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding: 10px;
+  }
+  .inpulComment {
+    width: 350px;
+    height: 150px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cbd2d9;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding: 10px;
+  }
+}
+
+.headingMain {
+  color: #1e293b;
+  font-size: 50px;
+  font-weight: bold;
+}
+.subHeading {
+  color: #1e293b;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button {
+  width: 120px;
+  height: 40px;
+  background-color: #0284c7;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.imgContainer {
+  align-self: flex-end;
+}
+.count {
+  background-color: #0284c7;
+  font-size: 15px;
+  color: #ffffff;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.countContainer {
+  display: flex;
+  align-items: flex-start;
+}
+.ulList {
+  list-style-type: none;
+  padding: 0px;
+}
