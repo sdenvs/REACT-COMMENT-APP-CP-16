@@ -51,7 +51,8 @@ class Comments extends Component {
     this.setState({comment: event.target.value})
   }
 
-  addComment = () => {
+  addComment = event => {
+    event.preventDefault()
     const {name, comment} = this.state
     if (name === '' || comment === '') {
       alert('input fields should not be empty.')
@@ -77,9 +78,9 @@ class Comments extends Component {
     return (
       <div className="bgContainer">
         <div className="topContainer">
-          <div className="commentContainer">
+          <form onSubmit={this.addComment} className="commentContainer">
             <h1 className="headingMain">Comments</h1>
-            <p className="subHeading">Say somthing about 4.0 Technologies</p>
+            <p className="subHeading">Say something about 4.0 Technologies</p>
             <input
               placeholder="Your Name"
               className="inpulName"
@@ -99,10 +100,10 @@ class Comments extends Component {
               value={comment}
             />
             <br />
-            <button className="button" onClick={this.addComment}>
+            <button type="submit" className="button">
               Add Comment
             </button>
-          </div>
+          </form>
           <div className="imgContainer">
             <img
               className="commentImage"
